@@ -1,0 +1,28 @@
+.dsc-card-loader{
+    width: 100%;
+}
+.dsc-card-loader__img{
+    border-radius: 100%;
+    background: #DCDADA; 
+    animation: load is infinite linear;
+}
+.dsc-card-loader__text{
+    
+    border-radius: 10px;
+    margin: 7px 0;
+    background:#DCDADA;
+    animation: load is infinite linear;
+}
+
+@keyframes load {
+    0%{
+        background: #DCDADA;
+    }
+    50%{
+        background: #DCDADA;
+    }
+    100%{
+        background: #DCDADA;
+    }
+ 
+}

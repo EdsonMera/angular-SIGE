@@ -1,0 +1,56 @@
+<div class="container-fluid dsc-skeleton-content">
+    <div>
+        <h1>Notificaciones: Crear Notificación</h1>
+    </div>
+
+    <hr/>
+    
+    <form class="form-row">
+        <div id="contenedor0">
+            <p><b>Autor: </b><input type="text" name="autor" id="autor" [(ngModel)]="autorInput"></p>
+            <p><b>Enviado a: </b><input type="text" name="enviado" id="enviado" [(ngModel)]="enviadoInput"></p>
+            <p><b>Fecha: </b> {{ fechaInput }} </p>
+            <p><b>Categoría: </b><input type="text" name="categoria" id="categoria" [(ngModel)]="categoriaInput"></p>
+        </div>
+
+        <div id="contenedor1">
+            <div>
+                <p></p>
+                <p><b>Grupo: </b><input type="text"></p>
+                <p><b>Turno: </b><select name="turn" id="turn">
+                    <option>Matutino</option>
+                    <option>Vespertino</option>
+                    <option>Ambos turnos</option>
+                </select></p>
+            </div>
+            <div>
+                <h4>Programa Académico:</h4>
+                <label><input type="checkbox" id="cbox1" value="first_checkbox"><i> Tronco común</i></label><br>
+                <label><input type="checkbox" id="cbox1" value="first_checkbox"><i> Automatización y Control Eléctrico Industrial</i></label><br>
+                <label><input type="checkbox" id="cbox1" value="first_checkbox"><i> Redes de Cómputo</i></label><br>
+                <label><input type="checkbox" id="cbox1" value="first_checkbox"><i> Sistemas Automotrices</i></label>
+            </div>
+            <div>
+                <br>
+                <label><input type="checkbox" id="cbox1" value="first_checkbox"><i> Sistemas Computacionales</i></label><br>
+                <label><input type="checkbox" id="cbox1" value="first_checkbox"><i> Sistemas Constructivos Asistidos por Computadora</i></label><br>
+                <label><input type="checkbox" id="cbox1" value="first_checkbox"><i> Sistemas Mecánicos Industriales</i></label>
+            </div>
+            
+        </div>
+    </form>
+
+    <br>
+    <div id="contenedor2">
+        <div>
+            <p><b>Notificación:</b></p>
+            <textarea class="text1" name="comentarios" rows="5" cols="75" placeholder="Redactar mensaje, anuncio, aviso o notificación" name="notificacion" id="notificacion" [(ngModel)]="notificacionInput"></textarea>
+            <p><b>Adjuntar archivo <i>(opcional)</i>:</b></p>
+            <input type="file">
+        </div>
+        <div id="centrado1">
+            <button type="button" class="btn">Enviar notificación</button>
+        </div>
+    </div>
+    <br>
+</div>

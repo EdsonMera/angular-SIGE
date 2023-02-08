@@ -1,0 +1,135 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+* {
+	box-sizing: border-box;
+	font-family: Raleway, sans-serif;
+ 
+}
+
+body{
+	  /* background: linear-gradient(90deg, #d6b1b5, #6b2727);		 */
+     /* background:url(https://pr0.nicelocal.com.mx/n-wJuEzI9wb3wKPW2v0DUw/587x440,q85/4px-BW84_n0QJGVPszge3NRBsKw-2VcOifrJIjPYFYkOtaCZxxXQ2Xdn0Ej3fH2oCW60sVYnUFtgBwbh-xeJG97ryh6up7Xyo5Mawgiisi9BCEfeEh8O1w)  */
+     background: url('assets/images/login/cet1_fondo.jpg')
+      no-repeat fixed center  center rgb(179, 27, 27);
+     background-size:cover ; 
+     opacity: 0.9;
+     min-width: 100%;
+   
+
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  min-height: 100vh;
+ 
+  
+}
+
+img{
+  margin: 5px 10px;
+  height: 70px;
+  width: 60px;
+  margin-left: 10px;
+  float: left;
+  
+}
+
+h1{
+  margin-top: 10px;
+  text-align-last: 300px;
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size:small;
+  color: #000000;
+}
+
+h2{
+  
+ /* text-align: center; */
+  font-family: Raleway, sans-serif;
+  font-size:small;
+  /* text-align:calc(); */
+  text-indent: 11%; /*mover texto en posicion de izquierda a derecha*/
+  font-weight: 400;
+}
+h3{
+  margin-top: 148%;
+  text-align: center; 
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+ font-size:small;
+
+ 
+  
+ 
+}
+
+.screen {		
+	background: linear-gradient(90deg, #6b2727, #d6b1b5);		
+	position: relative;	
+  height: 600px;
+  width: 390px;	  /*ancho y alto del recuadro del login completo*/
+	box-shadow: 0px 0px 24px #6b2727;
+ 
+}
+
+.screen__content {
+	z-index: 1;
+	position: relative;	
+
+}
+
+.screen__background {		
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+	-webkit-clip-path: inset(0 0 0 0);
+	clip-path: inset(0 0 0 0);	
+}
+
+.screen__background__shape {
+	transform: rotate(45deg);
+	position: absolute;
+}
+
+.screen__background__shape1 {
+	height: 520px;
+	width: 520px;   /*figura blanca*/
+	background:  #ffffff;	
+	top: -50px;
+	right: 120px;	
+	border-radius: 0 72px 0 0;
+}
+
+.screen__background__shape2 {
+	height: 220px;
+	width: 220px;
+	background: #6b2727;	  /*rojo 1*/
+	top: -172px;
+	right: 0;	
+	border-radius: 32px;
+}
+
+.screen__background__shape3 {
+	height: 540px;
+	width: 190px;
+	background: linear-gradient(270deg,  #6b2727,  #6b2727);
+	top: -24px;
+	right: 0;	
+	border-radius: 32px;
+}
+
+.screen__background__shape4 {
+	height: 130px;
+	width: 140px;
+	background: #6b2727;	
+	top: 440px;
+	right: 10px;	
+	border-radius: 60px;
+}

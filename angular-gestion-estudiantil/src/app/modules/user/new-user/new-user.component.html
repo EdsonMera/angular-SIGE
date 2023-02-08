@@ -1,0 +1,213 @@
+
+<div class="container-fluid dsc-skeleton-content">
+
+<h1>Usuarios: Nuevo usuario</h1>
+
+<form [formGroup]="userForm" (ngSubmit)="authenticate()" class="ingreso">
+    <div class="form-group row">
+      <label for="validationCustom01" class="col-sm-2">Nombre(s)</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control " id="validationCustom01" formControlName="nombre_alumno">
+        <small class="bg-danger text-light mt-2 px-3 py-0.5 rounded" 
+          *ngIf="(fm['nombre_alumno'].dirty || fm['nombre_alumno'].touched) && fm['nombre_alumno'].errors">
+          <ng-container [ngSwitch]="fm['nombre_alumno'].value">
+            <ng-container *ngSwitchCase="''">
+              El nombre es requerido
+            </ng-container>
+            <ng-container *ngSwitchDefault>
+              El nombre es invalido
+            </ng-container>
+          </ng-container>
+        </small>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="validationCustom02" class="col-sm-2 col-form-label">Apellido Paterno</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control " id="inputPassword" formControlName="a_p">
+        <small class="bg-danger text-light mt-2 px-3 py-0.5 rounded" 
+          *ngIf="(fm['a_p'].dirty || fm['a_p'].touched) && fm['a_p'].errors">
+          <ng-container [ngSwitch]="fm['a_p'].value">
+            <ng-container *ngSwitchCase="''">
+              El apellido paterno es requerido
+            </ng-container>
+            <ng-container *ngSwitchDefault>
+              El apellido paterno es invalido
+            </ng-container>
+          </ng-container>
+        </small>
+      </div>
+    </div>
+    <div class="form-group row">
+        <label for="validationCustom03" class="col-sm-2 col-form-label">Apellido Materno</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control " id="inputPassword" formControlName="a_m">
+          <small class="bg-danger text-light mt-2 px-3 py-0.5 rounded" 
+          *ngIf="(fm['a_m'].dirty || fm['a_m'].touched) && fm['a_m'].errors">
+          <ng-container [ngSwitch]="fm['a_m'].value">
+            <ng-container *ngSwitchCase="''">
+              El apellido materno es requerido
+            </ng-container>
+            <ng-container *ngSwitchDefault>
+              El apellido materno es invalido
+            </ng-container>
+          </ng-container>
+        </small>
+        </div>
+      </div>
+
+
+      <div class="form-group row">
+        <label for="inputEmail4"class="col-sm-2 col-form-label" >Correo Electronico</label>
+        <div class="col-sm-4">
+          <input type="email" class="form-control" id="inputEmail4" formControlName="correo">
+          <small class="bg-danger text-light mt-2 px-3 py-0.5 rounded" 
+          *ngIf="(fm['correo'].dirty || fm['correo'].touched) && fm['correo'].errors">
+          <ng-container [ngSwitch]="fm['correo'].value">
+            <ng-container *ngSwitchCase="''">
+              El correo electronico es requerido
+            </ng-container>
+            <ng-container *ngSwitchDefault>
+              El correo electronico es invalido
+            </ng-container>
+          </ng-container>
+        </small>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="inputEmail4"class="col-sm-2 col-form-label" >Contraseña</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="inputEmail4" formControlName="password">
+          <small class="bg-danger text-light mt-2 px-3 py-0.5 rounded" 
+          *ngIf="(fm['password'].dirty || fm['password'].touched) && fm['password'].errors">
+          <ng-container [ngSwitch]="fm['password'].value">
+            <ng-container *ngSwitchCase="''">
+              La contraseña es requerida
+            </ng-container>
+            <ng-container *ngSwitchDefault>
+              La contraseña es invalida
+            </ng-container>
+          </ng-container>
+        </small>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="inputEmail4"class="col-sm-2 col-form-label" >Telefono</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="inputEmail4" formControlName="telefono">
+          <small class="bg-danger text-light mt-2 px-3 py-0.5 rounded" 
+          *ngIf="(fm['telefono'].dirty || fm['telefono'].touched) && fm['telefono'].errors">
+          <ng-container [ngSwitch]="fm['telefono'].value">
+            <ng-container *ngSwitchCase="''">
+              El telefono es requerido
+            </ng-container>
+            <ng-container *ngSwitchDefault>
+              El telefono es invalido
+            </ng-container>
+          </ng-container>
+        </small>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-sm-2">
+        <label for="inputEmail4"class=" col-form-label" placeholder="Email">Perfil</label>
+       </div>
+        <select id="inputState" class="col-sm-4 col-form-label" formControlName="id_cat_rol">
+            <option selected>Catalogo de perfiles</option>
+            <option>...</option>
+            <option>...</option>
+            <option>...</option>
+          </select>
+          <small class="bg-danger text-light mt-2 px-3 py-0.5 rounded" 
+          *ngIf="(fm['id_cat_rol'].dirty || fm['id_cat_rol'].touched) && fm['id_cat_rol'].errors">
+          <ng-container [ngSwitch]="fm['id_cat_rol'].value">
+            <ng-container *ngSwitchCase="''">
+              El perfil es requerido
+            </ng-container>
+            <ng-container *ngSwitchDefault>
+              El perfil es invalido
+            </ng-container>
+          </ng-container>
+        </small>
+    </div>
+
+    <div class="form-group row">
+    
+        <div class="col-sm-6 button">
+            <button class="btn btn-primary col-sm-11" type="submit">Agregar Usuario</button>
+        </div>
+        
+    </div>
+
+
+  </form>
+
+<!-- <form class="row g-2 needs-validation" novalidate>
+    <div class="col-md-2">
+      <label for="validationCustom01" class="form-label">First name</label>
+      <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div> -->
+    <!-- <div class="col-md-4">
+      <label for="validationCustom02" class="form-label">Last name</label>
+      <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div> -->
+    <!-- <div class="col-md-4">
+      <label for="validationCustomUsername" class="form-label">Username</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text" id="inputGroupPrepend">@</span>
+        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+        <div class="invalid-feedback">
+          Please choose a username.
+        </div>
+      </div>
+    </div> -->
+    <!-- <div class="col-md-6">
+      <label for="validationCustom03" class="form-label">City</label>
+      <input type="text" class="form-control" id="validationCustom03" required>
+      <div class="invalid-feedback">
+        Please provide a valid city.
+      </div>
+    </div>
+    <div class="col-md-3">
+      <label for="validationCustom04" class="form-label">State</label>
+      <select class="form-select" id="validationCustom04" required>
+        <option selected disabled value="">Choose...</option>
+        <option>...</option>
+      </select>
+      <div class="invalid-feedback">
+        Please select a valid state.
+      </div>
+    </div> -->
+    <!-- <div class="col-md-3">
+      <label for="validationCustom05" class="form-label">Zip</label>
+      <input type="text" class="form-control" id="validationCustom05" required>
+      <div class="invalid-feedback">
+        Please provide a valid zip.
+      </div>
+    </div> -->
+    <!-- <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+        <label class="form-check-label" for="invalidCheck">
+          Agree to terms and conditions
+        </label>
+        <div class="invalid-feedback">
+          You must agree before submitting.
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Submit form</button>
+    </div>
+  </form> -->
+
+  <br>

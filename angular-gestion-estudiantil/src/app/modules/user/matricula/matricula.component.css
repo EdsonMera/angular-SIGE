@@ -1,0 +1,62 @@
+
+.drag-area {
+  border: 4px dashed #DBDADA;
+  height: 400px;
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.drag-area.active {
+  border: 10px dashed #B92C2C;
+}
+
+.icon {
+  font-size: 100px;
+  color: #fff;
+}
+
+header {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+}
+
+span {
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+  margin: 10px 0 15px 0;
+}
+
+.btnUpload {
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #8a1616;
+  text-align: center;
+  color: aliceblue;
+}
+.btnUpload:hover{
+  background: #984040;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.btn {
+  background: #a84f4f;
+  text-align: center;
+  color: aliceblue;
+}
+
+.btn:hover{
+  background: #8a1616;
+  text-align: center;
+}

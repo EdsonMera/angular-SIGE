@@ -1,0 +1,44 @@
+<form class="login" [formGroup]="loginForm" (ngSubmit)="authenticate()">
+    <div class="login__field">
+      <i class="login__icon ">
+        <img [src]="usuario">
+      </i>
+      <!--------------------------- FIELD EMAIL---------------------------------------------->
+      <input type="email" class="login__input" placeholder="Correo Electronico" formControlName="email">
+      <small class="bg-danger text-light mt-2 px-3 py-0.5 rounded" 
+      *ngIf="(fm['email'].dirty || fm['email'].touched) && fm['email'].errors">
+      <ng-container [ngSwitch]="fm['email'].value">
+        <ng-container *ngSwitchCase="''">
+          El email es requerido
+        </ng-container>
+        <ng-container *ngSwitchDefault>
+          El email es invalido
+        </ng-container>
+      </ng-container>
+    </small>
+    </div>
+    <!--------------------------- FIELD PASSWORD---------------------------------------------->
+    <div class="login__field">
+      <i class="login__icon2 ">
+        <img [src]="contra" alt="">
+      </i>
+      <input type="password" class="login__input" placeholder="Contraseña" formControlName="password">
+      <small class="bg-danger text-light mt-2 px-3 py-0.5 rounded" 
+      *ngIf="(fm['password'].dirty || fm['password'].touched) && fm['password'].errors">
+      <ng-container [ngSwitch]="fm['password'].value">
+        <ng-container *ngSwitchCase="''">
+          La contraseña es requerida
+        </ng-container>
+        <ng-container *ngSwitchDefault>
+          La contraseña es invalida
+        </ng-container>
+      </ng-container>
+    </small>
+      
+    </div>
+    <button class="button login__submit" type="submit">
+      <span class="button__text" >Ingresar</span>
+    </button>				
+  </form>
+
+  <!-- [disabled]="!isValidForm" agregar despues de button login_submit-->

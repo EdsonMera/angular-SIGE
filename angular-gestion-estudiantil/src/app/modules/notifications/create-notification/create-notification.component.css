@@ -1,0 +1,63 @@
+.btn {
+    background: #a84f4f;
+    text-align: center;
+    color: aliceblue;
+}
+
+.btn:hover{
+    background: #8a1616;
+    text-align: center;
+}
+
+#contenedor1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+#contenedor1 > div {
+    width: 33%;
+}
+
+#contenedor2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+#contenedor2 > div {
+    width: 50%;
+}
+
+#centrado1 {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TextArea Notificacion */
+/* Centrado Horizontal */
+::-webkit-input-placeholder {
+    text-align: center;
+}
+:-moz-placeholder {
+    /* Firefox 18- */
+    text-align: center;
+}
+::-moz-placeholder {
+    /* Firefox 19+ */
+    text-align: center;
+}
+:-ms-input-placeholder {
+    text-align: center;
+}
+/* Centrado vertical */
+textarea::placeholder { 
+    line-height: 110px;
+}
+
+/* Checkbox */
+input {
+    accent-color: #8a1616;
+}

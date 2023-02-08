@@ -1,0 +1,26 @@
+.btn{
+    
+    background: #8a1616;
+    text-align: center;
+    color: aliceblue;
+  }
+  h1{
+
+    font-size: 30px;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+  .nuevo_usuario{
+    padding-left: 20px;
+  }
+
+  .btn:hover{
+    background: #984040;
+    text-align: center;
+    transition: 0.5s;
+  }
+
+  table thead {
+    color: #8a1616;
+    background-color: #C4C4C4;   
+}

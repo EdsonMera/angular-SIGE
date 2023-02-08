@@ -1,0 +1,36 @@
+h1{
+
+    font-size: 30px;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+
+  .form-group{
+    padding-top: 30px;
+    padding-left: 35%;
+   
+  }
+
+  .button{
+    justify-content: center;
+    padding-left: 20%;
+  }
+
+  .btn{
+    
+    background: #8a1616;
+    text-align: center;
+    color: aliceblue;
+  }
+
+  .btn:hover{
+    background: #984040;
+    text-align: center;
+    transition: 0.5s;
+  }
+
+  .form-control{
+    background: #caced0;
+
+    background: #caced0;
+  }

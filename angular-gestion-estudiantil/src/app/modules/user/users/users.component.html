@@ -1,0 +1,35 @@
+
+<div class="container-fluid dsc-skeleton-content">
+
+<h1> Usuarios
+</h1>
+<div class="nuevo_usuario">
+    <button type="button" class="btn "  (click)="irCrearUs()">Nuevo Usuario</button>
+</div>
+
+<br>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido paterno</th>
+            <th>Apellido materno</th>
+            <th>Correo electrónico</th>
+            <th>Perfil</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td><span>{{user.NOMBRE}}</span></td>
+            <td><span>{{user.APELLIDO_PAT}}</span></td>
+            <td><span>{{user.APELLIDO_MAT}}</span></td>
+            <td><span>{{user.CORREO_ELEC}}</span></td>
+            <td><span>{{user.NOMBRE_PERFIL}}</span></td>
+            <td><span>Editar</span></td>
+        </tr>
+    </tbody>
+</table>
+
+<br>

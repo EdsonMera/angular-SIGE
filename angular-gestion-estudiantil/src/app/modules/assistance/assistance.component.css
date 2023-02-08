@@ -1,0 +1,15 @@
+.btn {
+    background: #a84f4f;
+    text-align: center;
+    color: aliceblue;
+}
+
+.btn:hover{
+    background: #8a1616;
+    text-align: center;
+}
+
+table thead {
+    color: #8a1616;
+    background-color: #C4C4C4;   
+}

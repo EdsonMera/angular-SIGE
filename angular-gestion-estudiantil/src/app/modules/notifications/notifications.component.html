@@ -1,0 +1,108 @@
+<div class="container-fluid dsc-skeleton-content" ng-app="miApp" ng-controller="mainController">
+
+    <div>
+        <h1>Notificaciones</h1>
+    </div>
+
+    <hr/>
+
+    <button type="button" class="btn" style="cursor: pointer" (click)="irCrearNot()">
+        Crear Notificación
+    </button> 
+
+    <form>
+        <input type="text" class="form-control" placeholder="Busqueda" ng-model="buscar">
+    </form>
+    
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Autor</th>
+                <th>Enviado a</th>
+                <th>Fecha de creación</th>
+                <th>Categoría</th>
+                <th>Notificación</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dante Olmedo Campos</td>
+                <td>1M11</td>
+                <td>10 mayo 2022</td>
+                <td>Gestión Escolar</td>
+                <td>El próximo sábado 17 de mayo se llevará a cabo la firma de boletas</td>
+                <td>
+                    <button type="button" class="btn" style="cursor: pointer" (click)="irCrearNot()">
+                        Editar
+                    </button>
+                    <button type="button" class="btn" style="cursor: pointer" (click)="irCrearNot()">
+                        Eliminar
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>Jorge Luis León Acevedo</td>
+                <td>Todos</td>
+                <td>28 mayo 2022</td>
+                <td>Comisión de Situación Escolar</td>
+                <td>Las fechas se publicarán en la página web de CET</td>
+                <td>
+                    <button type="button" class="btn" style="cursor: pointer" (click)="irCrearNot()">
+                        Editar
+                    </button>
+                    <button type="button" class="btn" style="cursor: pointer" (click)="irCrearNot()">
+                        Eliminar
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>Jorge Luis León Acevedo</td>
+                <td>Primer Semestre Turno Matutino</td>
+                <td>10 junio 2022</td>
+                <td>Reinscripciones</td>
+                <td>18 al 21 de julio de 2022</td>
+                <td>
+                    <button type="button" class="btn" style="cursor: pointer" (click)="irCrearNot()">
+                        Editar
+                    </button>
+                    <button type="button" class="btn" style="cursor: pointer" (click)="irCrearNot()">
+                        Eliminar
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>Jorge Luis León Acevedo</td>
+                <td>Turno vespertino</td>
+                <td>15 junio 2022</td>
+                <td>Otras</td>
+                <td>Acude con el representante de COSECOVI o consulta...</td>
+                <td>
+                    <button type="button" class="btn" style="cursor: pointer" (click)="irCrearNot()">
+                        Editar
+                    </button>
+                    <button type="button" class="btn" style="cursor: pointer" (click)="irCrearNot()">
+                        Eliminar
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>Jorge Luis León Acevedo</td>
+                <td>Todos</td>
+                <td>10 junio 2022</td>
+                <td>Becas</td>
+                <td></td>
+                <td>
+                    <button type="button" class="btn" style="cursor: pointer" (click)="irCrearNot()">
+                        Editar
+                    </button>
+                    <button type="button" class="btn" style="cursor: pointer" (click)="irCrearNot()">
+                        Eliminar
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</div>
