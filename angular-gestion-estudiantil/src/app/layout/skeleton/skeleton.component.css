@@ -1,0 +1,26 @@
+.dsc-skeleton-content {
+  min-height: calc(94vh - 80px - 60px);
+  min-width: 100%;
+
+  background-color: rgb(0, 0, 0, 0.05);
+}
+
+.btn {
+  background: #a84f4f;
+  text-align: center;
+  color: aliceblue;
+}
+
+h1 {
+  font-size: 30px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.nuevo_usuario {
+  padding-left: 20px;
+}
+
+.btn:hover {
+  background: #8a1616;
+  text-align: center;
+}

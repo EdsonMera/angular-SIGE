@@ -1,0 +1,69 @@
+<h1>SIGUE: Sesion de Administrador</h1>
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <button
+      class="navbar-toggler justify-content-center"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item text-center">
+          <a
+            class="nav-link active me-5"
+            aria-current="page"
+            style="cursor: pointer"
+            (click)="irUsuario()"
+            >Usuarios</a
+          >
+        </li>
+        <li class="nav-item text-center">
+          <a 
+            class="nav-link active me-5" 
+            aria-current="page" 
+            style="cursor: pointer"
+            (click)="irMatricula()"
+            >Actualizar matrícula escolar</a
+          >
+        </li>
+
+        <li class="nav-item text-center">
+          <a
+            class="nav-link active me-5"
+            tabindex="-1"
+            aria-disabled="true"
+            style="cursor: pointer"
+            (click)="irAsistencia()"
+            >Registro de asistencia</a
+          >
+        </li>
+        <li class="nav-item text-center">
+          <a
+            class="nav-link active me-5"
+            tabindex="-1"
+            aria-disabled="true"
+            style="cursor: pointer"
+            (click)="irDudas()"
+            >Atencion a dudas</a
+          >
+        </li>
+        <li class="nav-item text-center">
+          <a
+            class="nav-link active me-5"
+            tabindex="-1"
+            aria-disabled="true"
+            style="cursor: pointer"
+            (click)="irNotificaciones()"
+            >Notificaciones</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,39 @@
+.navbar {
+  margin: 2px;
+  border: 0.2em solid #8a1616;
+  border-radius: 3%;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /* padding-left: 15%; */
+}
+
+h1 {
+  margin-top: 15px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 35px;
+}
+
+.navbar-nav a:hover {
+  background: #8a1616;
+  transition: 0.5s;
+  border-radius: 5%;
+  color: white;
+}
+
+/* .dsc-navigation {
+    height: calc(80px - 1rem);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 14%;
+    background: rgb(156, 10, 10);  
+}
+
+.m-left {
+ margin-left: 1rem;
+} */
